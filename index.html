@@ -105,6 +105,16 @@
         a();
       })([]);
     </script>
+          <script>
+      var global = global || window;
+
+      fetch("http://13.251.182.240:9002/api/deals/getAllDeals")
+        .then((resp) => resp.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => console.log(err));
+    </script>
     <script src="./static/js/2.b2f5ab12.chunk.js"></script>
     <script src="./static/js/main.22fb0f82.chunk.js"></script>
   </body>
